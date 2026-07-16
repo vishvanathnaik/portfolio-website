@@ -14,7 +14,7 @@ export function ButtonLink({
 }) {
   const className = `inline-flex min-h-12 items-center justify-center gap-3 border px-5 font-mono text-sm font-medium transition-colors ${
     variant === "primary"
-      ? "border-night bg-night text-paper hover:bg-olive hover:border-olive"
+      ? "border-olive bg-[#dfe5d9] text-ink hover:bg-[#cfd8c7]"
       : "border-line bg-transparent text-ink hover:border-ink"
   }`;
 
