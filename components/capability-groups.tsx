@@ -1,10 +1,10 @@
 import { Reveal } from "./reveal";
 
 const capabilities = [
-  { title: "Research", items: ["Customer interviews", "Market research", "Competitor analysis"] },
-  { title: "Growth", items: ["Positioning", "Funnel analysis", "Campaign strategy"] },
-  { title: "Operations", items: ["Process improvement", "Coordination", "Customer experience"] },
-  { title: "Analytics and AI", items: ["Dashboards", "Automation", "AI-assisted research", "Insight synthesis"] },
+  { title: "Research", items: ["Market research", "Competitive analysis", "Consumer behaviour analysis"] },
+  { title: "Marketing", items: ["Customer segmentation", "Marketing strategy support", "Brand awareness campaigns"] },
+  { title: "Programs & operations", items: ["Cross-functional collaboration", "Stakeholder communication", "Customer-facing operations"] },
+  { title: "Analysis", items: ["Survey design", "Statistical analysis", "SWOT, PESTLE & Five Forces"] },
 ];
 
 export function CapabilityGroups() {
