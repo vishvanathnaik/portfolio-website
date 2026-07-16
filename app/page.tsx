@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "@/components/icons";
+import { BlogCard } from "@/components/blog-card";
 import { ButtonLink } from "@/components/button-link";
 import { CapabilityGroups } from "@/components/capability-groups";
 import { ContactLinks } from "@/components/contact-links";
@@ -7,6 +8,7 @@ import { ExperienceTimeline } from "@/components/experience-timeline";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { blogPosts } from "@/data/blog-posts";
 import { featuredProjects } from "@/data/projects";
 
 export default function Home() {
@@ -63,12 +65,32 @@ export default function Home() {
         <CapabilityGroups />
       </section>
 
+      <section className="border-y border-line bg-[#efede7] py-24 md:py-32" aria-labelledby="writing">
+        <div className="container-shell">
+          <Reveal>
+            <SectionHeading
+              id="writing"
+              label="03 · Writing"
+              title="Ideas at the intersection of engineering and business."
+              action={{ label: "Visit the blog", href: "/blog" }}
+            />
+          </Reveal>
+          <div className="mt-12 grid gap-px overflow-hidden border border-line bg-line md:grid-cols-3">
+            {blogPosts.map((post, index) => (
+              <Reveal key={post.slug} delay={index * 0.06}>
+                <BlogCard post={post} />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-night py-24 text-paper md:py-32" aria-labelledby="experience">
         <div className="container-shell grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
           <Reveal>
             <SectionHeading
               id="experience"
-              label="03 · Experience"
+              label="04 · Experience"
               title="Learning across research, programs and frontline operations."
               inverse
             />
@@ -79,7 +101,7 @@ export default function Home() {
 
       <section className="container-shell py-24 md:py-36" aria-labelledby="contact-home">
         <Reveal>
-          <p className="eyebrow text-olive">04 · Start a conversation</p>
+          <p className="eyebrow text-olive">05 · Start a conversation</p>
           <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <h2 id="contact-home" className="text-balance max-w-4xl text-4xl font-medium leading-tight tracking-[-0.035em] sm:text-5xl md:text-7xl">
               Have a role, project or problem worth exploring?
