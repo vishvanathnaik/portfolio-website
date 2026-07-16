@@ -19,8 +19,8 @@ export function Navigation() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-sm">
       <nav className="container-shell flex h-20 items-center justify-between" aria-label="Primary navigation">
-        <Link href="/" className="font-mono text-lg font-semibold tracking-[-0.04em]" aria-label="Vishvanath Naik, home">
-          VN<span className="text-olive">.</span>
+        <Link href="/" className="font-mono text-base font-semibold tracking-[-0.04em] sm:text-lg" aria-label="Vishvanath Naik, home">
+          Vishvanath Naik<span className="text-olive">.</span>
         </Link>
         <button
           className="grid h-11 w-11 place-items-center md:hidden"
