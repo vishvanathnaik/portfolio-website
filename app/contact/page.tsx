@@ -28,7 +28,7 @@ export default function ContactPage() {
               <p className="eyebrow mb-6 text-olive">Direct links</p>
               <ContactLinks stacked />
               <p className="mt-8 max-w-xl border-l-2 border-olive pl-4 text-sm leading-6 text-muted">
-                Contact details needed: replace the placeholder email and social profile URLs in <code className="font-mono">data/site.ts</code>.
+                For roles, research collaborations or project conversations, email and LinkedIn are the best ways to reach me.
               </p>
             </div>
           </div>
