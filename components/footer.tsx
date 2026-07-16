@@ -7,6 +7,7 @@ export function Footer() {
         <p>© {new Date().getFullYear()} Vishvanath Naik</p>
         <div className="flex gap-5">
           <Link href="/projects" className="hover:text-ink">Work</Link>
+          <Link href="/blog" className="hover:text-ink">Blog</Link>
           <Link href="/contact" className="hover:text-ink">Contact</Link>
           <a href="#main-content" className="hover:text-ink">Back to top ↑</a>
         </div>
