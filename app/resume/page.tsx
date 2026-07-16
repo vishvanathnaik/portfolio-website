@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const skills = [
   ["Market research", "Competitive analysis · Consumer behaviour analysis · Customer segmentation"],
-  ["Marketing strategy", "SWOT · PESTLE · Porter&apos;s Five Forces · Brand awareness campaigns"],
+  ["Marketing strategy", "SWOT · PESTLE · Porter's Five Forces · Brand awareness campaigns"],
   ["Research & analytics", "Survey design · Statistical analysis · Data-driven insights"],
   ["Collaboration", "Cross-functional programs · Stakeholder communication · Customer-facing operations"],
 ];
