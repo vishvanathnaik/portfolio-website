@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHeader } from "@/components/page-header";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
@@ -26,7 +27,16 @@ export default function AboutPage() {
 
       <section className="container-shell grid gap-12 border-t border-line py-20 md:grid-cols-[0.75fr_1.25fr] md:py-28">
         <Reveal>
-          <SectionHeading label="The story" title="From technical systems to commercial questions." />
+          <div>
+            <SectionHeading label="The story" title="From technical systems to commercial questions." />
+            <Image
+              src="/profile-photo.png"
+              alt="Portrait of Vishvanath Naik in Berlin"
+              width={284}
+              height={284}
+              className="mt-10 aspect-square w-full max-w-64 rounded-full object-cover ring-1 ring-line"
+            />
+          </div>
         </Reveal>
         <Reveal delay={0.06}>
           <div className="max-w-2xl space-y-7 text-lg leading-8 text-muted">
