@@ -7,6 +7,7 @@ import { MenuIcon } from "./icons";
 
 const links = [
   { label: "Work", href: "/projects" },
+  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Resume", href: "/resume" },
   { label: "Contact", href: "/contact" },
@@ -34,7 +35,7 @@ export function Navigation() {
         </button>
         <ul className="hidden items-center gap-8 md:flex">
           {links.map((link) => {
-            const active = pathname === link.href;
+            const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
             return (
               <li key={link.href}>
                 <Link
@@ -54,7 +55,7 @@ export function Navigation() {
       <div id="mobile-navigation" hidden={!open} className="border-t border-line bg-paper md:hidden">
         <ul className="container-shell py-4">
           {links.map((link) => {
-            const active = pathname === link.href;
+            const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
             return (
               <li key={link.href}>
                 <Link
