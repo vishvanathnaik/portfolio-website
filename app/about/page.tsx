@@ -21,7 +21,7 @@ export default function AboutPage() {
       <PageHeader
         label="About"
         title="An engineering foundation, applied to customers and business systems."
-        intro="My path spans chemical engineering, program management, customer research and operations in Germany. The common thread is a practical interest in how complex systems work—and how they can work better for people."
+        intro="I am a chemical engineering graduate from NITK Surathkal with experience spanning market research, program management, customer insight and frontline operations. I am now based in Berlin and focused on research-led marketing and growth opportunities."
       />
 
       <section className="container-shell grid gap-12 border-t border-line py-20 md:grid-cols-[0.75fr_1.25fr] md:py-28">
@@ -31,17 +31,14 @@ export default function AboutPage() {
         <Reveal delay={0.06}>
           <div className="max-w-2xl space-y-7 text-lg leading-8 text-muted">
             <p>
-              Chemical engineering trained me to break complicated problems into components, work with imperfect information and balance performance against real constraints.
+              Studying chemical engineering at the National Institute of Technology Karnataka taught me to break complex problems into components, work with imperfect information and balance performance against real constraints.
             </p>
             <p>
-              I then moved closer to customer and business questions through program management and customer research. That shift sharpened my interest in why people choose, where processes fail and how teams turn evidence into action.
+              At Dime Klear, an early-stage water filtration startup, I applied SWOT, PESTLE and Porter&apos;s Five Forces to assess industry dynamics, identify target customer segments and support marketing outreach. That experience moved me closer to the customer and commercial questions behind technical products.
             </p>
             <p>
-              Working in operations in Germany added a frontline perspective: good strategy only matters when it can survive the details of execution. Today, I am especially interested in roles where marketing, growth, operations, analytics and AI reinforce one another.
+              As a Junior Program Manager at Rupeek, I conducted customer research, tracked performance metrics and worked with cross-functional teams on customer-facing programs. My current role at Wolt in Berlin adds a frontline operating perspective: strategy and customer promises only matter when they hold up in daily execution.
             </p>
-            <aside className="border-l-2 border-olive bg-[#efede7] p-5 font-mono text-sm leading-6 text-ink">
-              Content needed: add the specific turning points, responsibilities and examples that make this narrative distinctly yours.
-            </aside>
           </div>
         </Reveal>
       </section>
