@@ -50,6 +50,7 @@ const personJsonLd = {
   "@type": "Person",
   name: "Vishvanath Naik",
   url: "https://vishvanathnaik.com",
+  image: "https://vishvanathnaik.com/profile-photo.png",
   homeLocation: { "@type": "Place", name: "Berlin, Germany" },
   knowsAbout: [
     "Marketing",
