@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 
 const skills = [
-  ["Research", "Customer interviews · Market research · Competitor analysis"],
-  ["Growth & marketing", "Positioning · Funnel analysis · Campaign strategy"],
-  ["Operations", "Process improvement · Coordination · Customer experience"],
-  ["Analytics & AI", "Dashboards · Automation · AI-assisted research · Insight synthesis"],
+  ["Market research", "Competitive analysis · Consumer behaviour analysis · Customer segmentation"],
+  ["Marketing strategy", "SWOT · PESTLE · Porter&apos;s Five Forces · Brand awareness campaigns"],
+  ["Research & analytics", "Survey design · Statistical analysis · Data-driven insights"],
+  ["Collaboration", "Cross-functional programs · Stakeholder communication · Customer-facing operations"],
 ];
 
 export default function ResumePage() {
@@ -23,19 +23,18 @@ export default function ResumePage() {
     <>
       <PageHeader
         label="Résumé"
-        title="Experience across programs, customer insight and operations."
-        intro="This page is a concise overview. Dates, role titles and detailed achievements remain intentionally blank until verified source information is supplied."
+        title="Experience across market research, programs and operations."
+        intro="Chemical engineering graduate with experience generating customer and market insights across fintech, an early-stage water technology startup and frontline retail operations."
       >
         <div className="mt-8">
           <ButtonLink href="/resume.pdf" download>Download résumé</ButtonLink>
-          <p className="mt-3 font-mono text-xs text-muted">PDF placeholder path: /resume.pdf · File not added yet</p>
         </div>
       </PageHeader>
 
       <section className="bg-night py-20 text-paper md:py-28" aria-labelledby="resume-experience">
         <div className="container-shell grid gap-14 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24">
           <Reveal>
-            <SectionHeading id="resume-experience" label="Experience" title="Roles to complete with verified details." inverse />
+            <SectionHeading id="resume-experience" label="Experience" title="Research, programs and frontline execution." inverse />
           </Reveal>
           <ExperienceTimeline />
         </div>
@@ -45,15 +44,18 @@ export default function ResumePage() {
         <Reveal>
           <SectionHeading label="Education" title="Chemical Engineering" />
           <div className="mt-8 border-t border-line pt-6">
-            <p className="font-mono font-medium">Degree and institution</p>
-            <p className="mt-2 text-muted">Content needed: institution, degree title, location and dates.</p>
+            <p className="font-mono font-medium">Bachelor of Technology, Chemical Engineering</p>
+            <p className="mt-2 text-muted">National Institute of Technology Karnataka, Surathkal</p>
+            <p className="mt-2 font-mono text-sm text-muted">2018 - 2022</p>
           </div>
         </Reveal>
         <Reveal delay={0.06}>
-          <SectionHeading label="Certifications" title="Additional learning" />
+          <SectionHeading label="Selected research" title="Consumer buying behaviour" />
           <div className="mt-8 border-t border-line pt-6">
-            <p className="font-mono font-medium">Certifications placeholder</p>
-            <p className="mt-2 text-muted">Content needed: verified certification names, issuers and dates.</p>
+            <p className="font-mono font-medium">Celebrity Endorsements &amp; Consumer Buying Behavior</p>
+            <p className="mt-2 leading-7 text-muted">
+              Designed a survey-based study and used Pearson correlation and Cronbach&apos;s Alpha to examine how celebrity endorsements influence consumer purchase confidence.
+            </p>
           </div>
         </Reveal>
       </section>
@@ -61,7 +63,7 @@ export default function ResumePage() {
       <section className="border-t border-line bg-[#efede7] py-20 md:py-28" aria-labelledby="resume-skills">
         <div className="container-shell">
           <Reveal>
-            <SectionHeading id="resume-skills" label="Skills" title="A cross-functional toolkit." />
+            <SectionHeading id="resume-skills" label="Skills" title="A research-led commercial toolkit." />
           </Reveal>
           <dl className="mt-10 grid gap-px overflow-hidden border border-line bg-line md:grid-cols-2">
             {skills.map(([term, detail]) => (
